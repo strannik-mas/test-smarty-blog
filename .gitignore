@@ -1,7 +1,8 @@
 /src/vendor/
 /node_modules/
 /src/public/assets/css/style.css.map
-/src/templates_c/
+/src/templates_c/*
+!/src/templates_c/.gitkeep
 /src/cache/
 .idea
 

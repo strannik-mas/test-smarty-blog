@@ -56,13 +56,13 @@ cd test-smarty
 docker compose up -d --build
 ```
 
----
+### 3. Выполнить команду
 
-### 3. Открыть в браузере
-
-```text
-http://localhost:8080
+```bash
+docker compose exec app composer install
 ```
+
+---
 
 ---
 
@@ -109,9 +109,15 @@ php cli.php seed
 
 ---
 
+### Открыть в браузере
+
+```text
+http://localhost:8080
+```
+
 ## 🎨 SCSS
 
-Используется SCSS для стилей.
+Используется SCSS для стилей. Если нужно что-то поменять
 
 ### Установка
 
