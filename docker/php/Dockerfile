@@ -16,6 +16,8 @@ RUN sed -ri -e 's!/var/www/html!/var/www/html/public!g' \
     /etc/apache2/apache2.conf \
     /etc/apache2/conf-available/*.conf
 
+RUN chmod -R 777 /var/www/html/templates_c
+
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
