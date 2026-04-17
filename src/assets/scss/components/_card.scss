@@ -1,0 +1,31 @@
+.post-card {
+    border: 1px solid $border-color;
+    border-radius: $radius;
+    overflow: hidden;
+
+    &__image {
+        height: 180px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &__content {
+        padding: 16px;
+    }
+
+    &__title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        font-size: 14px;
+        color: $color-muted;
+    }
+
+    &__read-more {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,7 @@
+/src/vendor/
+/node_modules/
+/src/public/assets/css/style.css.map
+/src/templates_c/
+/src/cache/
+.idea
+
