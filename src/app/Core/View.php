@@ -11,17 +11,9 @@ class View
     
     public function __construct()
     {
-        $compileDir = __DIR__ . '/../../templates_c';
-        if (!is_dir($compileDir)) {
-            mkdir($compileDir, 0777, true);
-        }
-        if (!is_writable($compileDir)) {
-            chmod($compileDir, 0777);
-        }
-
         $this->smarty = new Smarty();
         $this->smarty->setTemplateDir(__DIR__ . '/../../templates');
-        $this->smarty->setCompileDir($compileDir);
+        $this->smarty->setCompileDir(__DIR__ . '/../../templates_c');
         $this->smarty->setCacheDir(__DIR__ . '/../../cache');
     }
 
